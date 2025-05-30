@@ -50,24 +50,9 @@ A modern e-commerce frontend application built with React and Vite.
 - **JavaScript/TypeScript** - Programming language
 - Modern CSS for styling
 
-## 📁 Project Structure
-
-```
-ECommerceFrontend/
-├── public/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── assets/
-│   └── App.jsx
-├── package.json
-├── vite.config.js
-└── README.md
-```
-
 ## 🔧 Environment Variables
 
-This project uses the following environment variables:
+This project uses the following environment variables
 
 - `VITE_BACKEND_URL` - Backend API URL (default: http://localhost:5000/)
 - `VITE_PUBLISHABLE_KEY` - Your Stripe publishable key for payment processing
