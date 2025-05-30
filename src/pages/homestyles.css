@@ -75,6 +75,26 @@
   .product-images:hover {
     transform: scale(1.05);
   }
+
+
+  .logout-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+  }
+  
+  .logout-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+    border-color: #fff;
+  }
   
   /* Product Info */
   .product-info {

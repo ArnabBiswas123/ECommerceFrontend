@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./homestyles.css";
 import { loadStripe } from "@stripe/stripe-js";
 const stripePromise = loadStripe(import.meta.env.VITE_PUBLISHABLE_KEY);
+import { useNavigate } from "react-router-dom";
 
 
 const handleBuyNow = async (product) => {
@@ -42,6 +43,7 @@ const handleBuyNow = async (product) => {
 
 export default function HomePage() {
   const [products, setProducts] = useState([]);
+  const navigate=useNavigate()
 
   useEffect(() => {
     fetchproducts();
@@ -64,8 +66,9 @@ export default function HomePage() {
       <header className="header">
         <h1 className="title">TechStore</h1>
         <p className="subtitle">Your one-stop shop for electronics</p>
+        <button className="logout-btn" onClick={()=>{navigate('/login')}}>Login</button>
       </header>
-
+ 
       <main className="main">
         <div className="products-grid">
           {products.map((product) => (
